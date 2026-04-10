@@ -1,26 +1,27 @@
-:root {
-  font-family: system-ui, sans-serif;
-  line-height: 1.5;
-  color: #1a1a1a;
-  background: #f6f6f6;
-}
+@import "./theme/inlineDefaults.css";
 
-body {
-  margin: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 font-sans text-brand-muted-fg bg-brand-background antialiased;
+  }
 }
 
 .main {
-  max-width: 40rem;
-  margin: 3rem auto;
-  padding: 1.5rem 2rem;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  @apply max-w-2xl mx-auto my-12 px-8 py-6 bg-brand-surface rounded-brand shadow-sm border border-brand-border;
 }
 
 code {
-  background: #eee;
-  padding: 0.15em 0.4em;
-  border-radius: 4px;
-  font-size: 0.9em;
+  @apply bg-brand-muted px-1.5 py-0.5 rounded text-sm text-brand-muted-fg;
+}
+
+.shared-app-shell-title {
+  @apply mt-0 font-heading text-2xl font-semibold text-brand-primary;
+}
+
+.landing-root {
+  @apply mt-6 mb-8;
 }

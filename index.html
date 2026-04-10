@@ -3,7 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React Frontend</title>
+    <title>Storefront</title>
+    <meta name="description" content="Shop powered by FullStack" />
+    <link rel="icon" href="/branding-defaults/favicon.png" type="image/png" />
+    <style>
+      :root {
+        --color-primary: #1a1a1a;
+        --color-primary-foreground: #ffffff;
+        --color-secondary: #f4f4f5;
+        --color-secondary-foreground: #18181b;
+        --color-accent: #3b82f6;
+        --color-accent-foreground: #ffffff;
+        --color-background: #f6f6f6;
+        --color-surface: #ffffff;
+        --color-muted: #f4f4f5;
+        --color-muted-foreground: #71717a;
+        --color-border: #e4e4e7;
+        --color-destructive: #dc2626;
+        --color-destructive-foreground: #ffffff;
+        --color-success: #16a34a;
+        --color-success-foreground: #ffffff;
+        --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+        --font-heading: var(--font-sans);
+        --radius-brand: 0.5rem;
+      }
+      body {
+        margin: 0;
+        font-family: var(--font-sans);
+        background: var(--color-background);
+        color: var(--color-muted-foreground);
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

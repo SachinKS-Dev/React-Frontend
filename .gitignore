@@ -2,3 +2,6 @@ node_modules/
 dist/
 .env
 .env.*
+
+# Shared library: separate git repo (SachinKS-Dev/react_code_base); do not commit into this app
+react_code_base/
